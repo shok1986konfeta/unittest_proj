@@ -1,5 +1,7 @@
 import unittest
 from utils.arrs import get, my_slice
+
+
 class TestArrayFunctions(unittest.TestCase):
     def test_get_existing_index(self):
         array = [1, 2, 3, 4, 5]
@@ -30,6 +32,7 @@ class TestArrayFunctions(unittest.TestCase):
         array = [1, 2, 3, 4, 5]
         result = my_slice(array, end=10)
         self.assertEqual(result, [1, 2, 3, 4, 5])
+
 
 if __name__ == '__main__':
     unittest.main()
